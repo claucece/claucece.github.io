@@ -1,0 +1,30 @@
+/**
+ * Homepage
+ */
+
+#main {
+  margin-top: 100px;
+  margin-bottom: 150px;
+}
+
+.home-container {
+  display: -webkit-flex;
+  display: flex;
+  margin-top: $box-indent;
+}
+
+.logo {
+    width: $full-width;
+    padding-bottom: 25px;
+
+    > .inside-image {
+      width: $full-width;
+    }
+
+    > .inside-png-image {
+      margin-top: 7px;
+      width: $full-width;
+    }
+
+}
+

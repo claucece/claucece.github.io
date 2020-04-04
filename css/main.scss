@@ -1,0 +1,53 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Space+Mono&display=swap');
+
+// Our variables
+$base-font-family: 'Space Mono', monospace;
+$alternative-font-family: 'Space Mono', monospace;
+$base-font-size:   16px;
+$small-font-size:  $base-font-size * 0.8;
+$base-line-height: 1.5;
+
+$spacing-unit:     30px;
+
+$text-color:       black;
+$header-text-color: #111;
+$background-color: #ffffff;
+$brand-color:      #3d3d3d;
+
+$white-color:      #fafafa;
+$yellow-hover-color:  #F97625;
+$red-hover-color:  #B30952;
+$black-color:       black;
+
+// Width of the content area
+$content-width:    1400px;
+
+$on-palm:          600px;
+$on-laptop:        800px;
+$on-small:        1000px;
+
+$box-width:        100px;
+$box-indent:        30px;
+
+$full-width:       100%;
+
+@mixin media-query($device) {
+  @media screen and (max-width: $device) {
+    @content;
+  }
+}
+
+
+
+// Import partials from `sass_dir` (defaults to `_sass`)
+@import
+  "base",
+  "layout",
+  "homepage"
+  ;

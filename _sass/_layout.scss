@@ -1,0 +1,246 @@
+/**
+ * Site header
+ */
+.site-header {
+
+    //fix the header in the top
+    position: fixed;
+    width: $full-width;
+    background-color: white;
+
+    z-index: 1;
+}
+
+.site-title {
+    font-size: 26px;
+    line-height: 56px;
+    letter-spacing: -1px;
+    margin-bottom: 0;
+    float: left;
+
+    &,
+    &:visited {
+        color: $black-color;
+    }
+
+    .mobile-header {
+        display: none;
+        @include media-query($on-palm) {
+            display: inline;
+        }
+    }
+}
+
+/**
+ * Site footer
+ */
+.site-footer {
+    padding: $spacing-unit;
+    background-color: $yellow-hover-color;
+}
+
+.contact-list,
+.social-media-list {
+    list-style: none;
+    margin-left: 0;
+}
+
+.footer-col-wrapper {
+    margin-left: -$spacing-unit / 3;
+    @extend %clearfix;
+}
+
+.footer-col {
+    float: left;
+    padding-left: $spacing-unit / 3;
+}
+
+.footer-col-1 {
+    width: -webkit-calc(60% - (#{$spacing-unit} / 2));
+    width:         calc(60% - (#{$spacing-unit} / 2));
+}
+
+.footer-col-2 {
+    width: -webkit-calc(40% - (#{$spacing-unit} / 2));
+    width:         calc(40% - (#{$spacing-unit} / 2));
+}
+
+
+@include media-query($on-laptop) {
+    .footer-col-1,
+    .footer-col-2 {
+        width: -webkit-calc(50% - (#{$spacing-unit} / 2));
+        width:         calc(50% - (#{$spacing-unit} / 2));
+    }
+}
+
+@include media-query($on-palm) {
+    .footer-col {
+        float: none;
+        width: -webkit-calc($full-width - (#{$spacing-unit} / 2));
+        width:         calc($full-width - (#{$spacing-unit} / 2));
+    }
+}
+
+/**
+ * Page content
+ */
+.page-content {
+    padding-top: 70px;
+}
+
+/**
+ * Pages layout
+ */
+
+.post-title {
+    font-size: 42px;
+    line-height: 1;
+    margin-top: 10%;
+
+    @include media-query($on-laptop) {
+        font-size: 36px;
+    }
+}
+
+.content {
+  margin-top: $box-indent;
+}
+
+.container {
+  display: -webkit-flex;
+  display: flex;
+
+  > .about-text {
+  margin-bottom: 100px;
+  }
+}
+
+.flex-item-3 {
+    width: $full-width / 2;
+
+    > .inside-image {
+      width: $full-width;
+    }
+
+    a {
+      color: $red-hover-color;
+    }
+
+}
+
+.flex-item-4 {
+    //margin-top: $spacing-unit;
+    width: $full-width / 2;
+    padding: 15px;
+
+    > .inside-image {
+      width: $full-width;
+    }
+
+    > .inside-png-image {
+      margin-top: 7px;
+      width: $full-width;
+    }
+
+    a {
+      color: $red-hover-color;
+    }
+
+}
+
+/**
+ *  About page
+ */
+
+.yellow-header {
+    width: auto;
+    margin-top: 40px;
+    display: block;
+
+    > .inside-logo {
+      width: $full-width;
+    }
+}
+
+/**
+ *  Team page
+ */
+
+.flex-container {
+    padding: 20px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 50px;
+    margin-right: 50px;
+    list-style: none;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row;
+    justify-content: space-around;
+    height: auto;
+    line-height:30px;
+}
+
+.flex-item {
+    padding: 10px;
+    padding-top: 0px;
+    margin: 10px;
+    margin-top: 0px;
+    border: 5px solid $yellow-hover-color;
+    color: black;
+    font-weight: bold;
+    font-size: 1.5em;
+    text-align: center;
+    flex: 1 0 0px;
+    height: 70px;
+    width: 120px;
+}
+
+.team-links {
+  margin-right: 15px;
+}
+
+.team-icon {
+  float: right;
+  margin-right: 3px;
+  > svg {
+    width: 22px;
+    height: 22px;
+    margin-top: 5px;
+  }
+}
+
+/**
+ *  Contact page
+ */
+.contact-item {
+    padding: 30px;
+    background: $yellow-hover-color;
+    margin: 10px;
+    color: black;
+    font-weight: bold;
+    font-size: 1.5em;
+    text-align: center;
+    flex: 1 0 auto;
+    height: auto;
+
+    > p {
+      padding-bottom: 40px;
+    }
+}
+
+.contribute {
+    margin-top: 40px;
+
+    > a {
+      color: $text-color;
+    }
+
+    > p {
+      padding-bottom: 20px;
+    }
+}

@@ -88,12 +88,12 @@
 
 .page-header {
     font-family: $base-font-family;
+    margin-top: 170px;
 }
 
 .page-title {
     font-size: 42px;
     line-height: 1;
-    margin-top: 10%;
 
     @include media-query($on-laptop) {
         font-size: 36px;

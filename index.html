@@ -15,41 +15,13 @@ layout: default
 
 <div class="container">
   <div class="flex-container">
+    {% for page in site.pages %}
+      {% if page.tags == "menu" %}
     <div class="flex-item">
 		  <br>
-      {% for page in site.pages %}
       <a href="{{ page.url | prepend: site.baseurl }}" ><p>{{ page.title }}</p></a>
-      {% endfor %}
-		</div>
-
-    <div class="flex-item">
-		  <br>
-			<p>Research</p>
-		</div>
-
-    <div class="flex-item">
-		  <br>
-			<p>Projects</p>
-		</div>
-
-		<div class="flex-item">
-		  <br>
-			<p>Work</p>
-		</div>
-
-		<div class="flex-item">
-		  <br>
-			<p>CV</p>
-		</div>
-
-		<div class="flex-item">
-		  <br>
-			<p>Blog</p>
-		</div>
-
-		<div class="flex-item">
-		  <br>
-			<p>Contact</p>
-		</div>
+	  </div>
+		  {% endif %}
+    {% endfor %}
 	</div>
 </div>

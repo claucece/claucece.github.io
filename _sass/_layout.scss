@@ -83,17 +83,14 @@
 }
 
 /**
- * Page content
+ * Page layout
  */
-.page-content {
-    padding-top: 70px;
+
+.page-header {
+    font-family: $base-font-family;
 }
 
-/**
- * Pages layout
- */
-
-.post-title {
+.page-title {
     font-size: 42px;
     line-height: 1;
     margin-top: 10%;
@@ -103,17 +100,38 @@
     }
 }
 
-.content {
-  margin-top: $box-indent;
+.page-content {
+    padding-top: 5px;
+    font-family: $page-font-family;
+    font-size: 22px;
 }
 
 .container {
-  display: -webkit-flex;
-  display: flex;
 
   > .about-text {
-  margin-bottom: 100px;
+      margin-bottom: 20px;
+      > p {
+        margin-bottom: 25px;
+      }
   }
+
+  > div {
+      margin-bottom: 50px;
+  }
+
+  > .interests {
+      > p {
+        margin-bottom: 25px;
+      }
+  }
+}
+
+.about-subtitle {
+    margin-bottom: 10px;
+}
+
+.centered-list {
+      margin-left: 150px;
 }
 
 .flex-item-3 {
@@ -153,14 +171,20 @@
  *  About page
  */
 
-.yellow-header {
-    width: auto;
-    margin-top: 40px;
-    display: block;
+.photo-container {
+      border-top: 25px solid $yellow-hover-color;
+      transform: skew(0, -6deg);
+}
 
-    > .inside-logo {
-      width: $full-width;
-    }
+.photo {
+      width: $full-width / 1.5;
+      margin-left: 300px;
+      margin-right: 300px;
+}
+
+.important {
+      background-color: $orange-hover-color;
+      padding: 5px;
 }
 
 /**

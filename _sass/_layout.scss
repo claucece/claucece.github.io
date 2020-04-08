@@ -187,6 +187,23 @@
 }
 
 /**
+ *  Contact page
+ */
+
+.contact-container {
+      margin-top: 70px;
+      border-top: 25px solid $yellow-hover-color;
+      transform: skew(0, 3deg);
+}
+
+.contact-box {
+      margin-top: -40px;
+      > p {
+        margin-bottom: 25px;
+      }
+}
+
+/**
  *  Team page
  */
 

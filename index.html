@@ -17,7 +17,9 @@ layout: default
   <div class="flex-container">
     <div class="flex-item">
 		  <br>
-			<p>About</p>
+      {% for page in site.pages %}
+      <a href="{{ page.url | prepend: site.baseurl }}" ><p>{{ page.title }}</p></a>
+      {% endfor %}
 		</div>
 
     <div class="flex-item">

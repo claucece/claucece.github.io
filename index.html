@@ -19,7 +19,7 @@ layout: default
       {% if page.tags == "menu" %}
     <div class="flex-item">
 		  <br>
-      <a href="{{ page.url | prepend: site.baseurl }}" ><p>{{ page.title }}</p></a>
+      <a class="index-link" href="{{ page.url | prepend: site.baseurl }}" ><p>{{ page.title }}</p></a>
 	  </div>
 		  {% endif %}
     {% endfor %}

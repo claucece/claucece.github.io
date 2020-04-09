@@ -36,13 +36,21 @@
  */
 .site-footer {
     padding: $spacing-unit;
-    background-color: $yellow-hover-color;
+    background-color: $strong-orange-color;
 }
 
 .contact-list,
 .social-media-list {
     list-style: none;
     margin-left: 0;
+}
+
+
+.footer-link {
+    text-decoration: none;
+    background-color: $strong-orange-color;
+    padding: 0px;
+
 }
 
 .footer-col-wrapper {
@@ -53,6 +61,7 @@
 .footer-col {
     float: left;
     padding-left: $spacing-unit / 3;
+
 }
 
 .footer-col-1 {
@@ -179,12 +188,23 @@
     }
 }
 
+.index-link {
+    color: $black-color;
+    text-decoration: none;
+    background-color: $orange-hover-color;
+    padding: 0px;
+
+    &:visited {
+       color: $black-color;
+    }
+}
+
 /**
  *  About page
  */
 
 .photo-container {
-      border-top: 55px solid $yellow-hover-color;
+      border-top: 55px solid $strong-orange-color;
       transform: skew(0, -6deg);
 }
 
@@ -205,7 +225,7 @@
 
 .contact-container {
       margin-top: 70px;
-      border-top: 25px solid $yellow-hover-color;
+      border-top: 25px solid $strong-orange-color;
       transform: skew(0, 3deg);
 }
 
@@ -243,7 +263,7 @@
     padding-top: 0px;
     margin: 10px;
     margin-top: 0px;
-    border: 5px solid $yellow-hover-color;
+    border: 5px solid $strong-orange-color;
     color: black;
     font-weight: bold;
     font-size: 1.5em;
@@ -272,7 +292,7 @@
  */
 .contact-item {
     padding: 30px;
-    background: $yellow-hover-color;
+    background: $strong-orange-color;
     margin: 10px;
     color: black;
     font-weight: bold;

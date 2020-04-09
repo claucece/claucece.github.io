@@ -92,7 +92,8 @@
 }
 
 .page-title {
-    font-size: 42px;
+    font-size: 52px;
+    font-weight: bold;
     line-height: 1;
 
     @include media-query($on-laptop) {
@@ -107,9 +108,10 @@
 }
 
 .container {
+  margin-bottom: 100px;
 
   > .about-text {
-      margin-bottom: 20px;
+      margin-bottom: 50px;
       > p {
         margin-bottom: 25px;
       }
@@ -167,16 +169,27 @@
 
 }
 
+.big-font {
+    font-size: 40px;
+    margin-bottom: 100px;
+    text-align: right;
+
+    > p {
+        margin-bottom: 50px;
+    }
+}
+
 /**
  *  About page
  */
 
 .photo-container {
-      border-top: 25px solid $yellow-hover-color;
+      border-top: 55px solid $yellow-hover-color;
       transform: skew(0, -6deg);
 }
 
 .photo {
+      margin-top: -50px;
       width: $full-width / 1.5;
       margin-left: 25%;
 }

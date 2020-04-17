@@ -31,6 +31,24 @@
     }
 }
 
+
+.menu {
+    clear: both;
+    float: right;
+    margin-top: -50px;
+    font-size: 20px;
+}
+
+.menu-link {
+    background-color: white;
+    border-top: 55px solid $strong-orange-color;
+
+    &,
+    &:visited {
+        color: $black-color;
+    }
+}
+
 /**
  * Site footer
  */
@@ -283,6 +301,7 @@
 
 .cv {
     margin-top: -20px;
-    margin-left: 400px;
+    margin-left: 300px;
     width: 60%;
+    border-left: 40px solid $strong-orange-color;
 }

@@ -6,6 +6,17 @@
               <img src="/images/home.svg" class="inside-svg" alt="OTR logo" />
             </span>
         </a>
+
+      <div class="menu">
+        {% if page.layout == "page" %}
+          {% for page in site.pages %}
+            {% if page.tags == "menu" %}
+              <a class="menu-link" href="{{ page.url | prepend: site.baseurl }}" >{{ page.title }}</a>
+            {% endif %}
+          {% endfor %}
+        {% endif %}
+      </div>
+
     </div>
 
 </header>

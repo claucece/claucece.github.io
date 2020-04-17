@@ -97,6 +97,8 @@
 
 .page-header {
     font-family: $base-font-family;
+    margin-left: 30px;
+    margin-right: 30px;
     margin-top: 170px;
 }
 
@@ -111,6 +113,8 @@
 }
 
 .page-content {
+    margin-left: 30px;
+    margin-right: 30px;
     padding-top: 5px;
     font-family: $page-font-family;
     font-size: 22px;
@@ -273,3 +277,12 @@
     width: 120px;
 }
 
+/**
+ *  CV page
+ */
+
+.cv {
+    margin-top: -20px;
+    margin-left: 400px;
+    width: 60%;
+}

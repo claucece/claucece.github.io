@@ -4,6 +4,9 @@
 
 #main {
   margin-bottom: 150px;
+  @include media-query($on-palm) {
+    margin-bottom: 0px;
+  }
 }
 
 .home-content {
@@ -15,7 +18,7 @@
   display: flex;
 }
 
-.logo {
+.intro {
     width: $full-width;
     padding-bottom: 25px;
     margin-top: 170px;
@@ -24,15 +27,38 @@
       width: $full-width;
     }
 
-    > .inside-png-image {
-      margin-top: 7px;
+  @include media-query($on-palm) {
+    padding-bottom: 0px;
+    margin-top: 140px;
+
+    > .inside-image {
       width: $full-width;
     }
+  }
+}
 
+.full-display {
+  @include media-query($on-palm) {
+    display: none;
+  }
+}
+
+.mobile-display {
+  display: none;
+  @include media-query($on-palm) {
+    display: block;
+  }
 }
 
 .explanation {
     font-size: 14px;
+    text-align: left;
     margin-left: 80px;
     margin-bottom: 50px;
+
+  @include media-query($on-palm) {
+    font-size: 8px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+  }
 }

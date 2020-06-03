@@ -31,7 +31,6 @@
     }
 }
 
-
 .menu {
     clear: both;
     float: right;
@@ -157,6 +156,10 @@
         margin-bottom: 25px;
       }
   }
+
+  @include media-query($on-palm) {
+    margin-bottom: 0px;
+  }
 }
 
 .about-subtitle {
@@ -219,6 +222,12 @@
     &:visited {
        color: $black-color;
     }
+
+    @include media-query($on-palm) {
+      > .media-text {
+         margin: -30px;
+      }
+    }
 }
 
 /**
@@ -258,10 +267,6 @@
       }
 }
 
-/**
- *  Team page
- */
-
 .flex-container {
     padding: 20px;
     margin-top: 0px;
@@ -278,6 +283,14 @@
     justify-content: space-around;
     height: auto;
     line-height:30px;
+
+    @include media-query($on-palm) {
+      padding: 20px;
+      padding-bottom: 5px;
+      display: inline-block;
+      margin-left: 50px;
+      margin-right: 50px;
+    }
 }
 
 .flex-item {
@@ -293,6 +306,14 @@
     flex: 1 0 0px;
     height: 70px;
     width: 120px;
+    @include media-query($on-palm) {
+        padding: 0px;
+        margin: 10px;
+        margin-top: 0px;
+        font-size: 1em;
+        height: 30px;
+        width: 120px;
+    }
 }
 
 /**

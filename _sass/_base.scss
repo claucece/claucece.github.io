@@ -30,7 +30,6 @@ img {
     margin-top: -48px;
     max-width: $full-width;
     vertical-align: middle;
-    width: 150px;
 }
 
 
@@ -128,10 +127,14 @@ a {
  * Icons
  */
 
-.inside-svg {
+.home-logo {
     margin-top: 5px;
     width: 80%;
     height: auto;
+
+    @include media-query($on-palm) {
+        width: 40%;
+    }
 }
 
 .icon-footer {

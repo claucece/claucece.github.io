@@ -4,8 +4,13 @@ layout: default
 
 <div id="main">
   <div class="home-container">
-    <div class="logo">
-      <object class="inside-image" data="/images/intro_web.svg" type="image/svg+xml"> <img src="/images/logo.png" class="inside-png-image" alt="OTR logo" /> </object>
+    <div class="intro">
+		  <div class="full-display">
+        <img src="/images/intro_web.svg" class="inside-image" alt="I'm a cryptographic developer and implementer" />
+			</div>
+			<div class="mobile-display">
+        <img src="/images/intro_web_mobil.svg" class="inside-image" alt="I'm a cryptographic developer and implementer" />
+			</div>
     </div>
 </div>
 
@@ -19,7 +24,7 @@ layout: default
       {% if page.tags == "menu" %}
     <div class="flex-item">
 		  <br>
-      <a class="index-link" href="{{ page.url | prepend: site.baseurl }}" ><p>{{ page.title }}</p></a>
+      <a class="index-link" href="{{ page.url | prepend: site.baseurl }}" ><p class="media-text">{{ page.title }}</p></a>
 	  </div>
 		  {% endif %}
     {% endfor %}

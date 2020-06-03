@@ -169,4 +169,11 @@ a {
    > .top-copyright {
        padding-top: 80px;
    }
+
+   @include media-query($on-palm) {
+     font-size: 8px;
+     > .top-copyright {
+       padding-top: 10px;
+     }
+   }
 }

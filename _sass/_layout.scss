@@ -72,7 +72,6 @@
 
 .footer-col-wrapper {
     margin-left: -$spacing-unit / 3;
-    @extend %clearfix;
 }
 
 .footer-col {
@@ -86,15 +85,9 @@
     width:         calc(60% - (#{$spacing-unit} / 2));
 }
 
-.footer-col-2 {
-    width: -webkit-calc(40% - (#{$spacing-unit} / 2));
-    width:         calc(40% - (#{$spacing-unit} / 2));
-}
-
 
 @include media-query($on-laptop) {
-    .footer-col-1,
-    .footer-col-2 {
+    .footer-col-1 {
         width: -webkit-calc(50% - (#{$spacing-unit} / 2));
         width:         calc(50% - (#{$spacing-unit} / 2));
     }
@@ -105,6 +98,16 @@
         float: none;
         width: -webkit-calc($full-width - (#{$spacing-unit} / 2));
         width:         calc($full-width - (#{$spacing-unit} / 2));
+
+        > h1 {
+          font-size: 20px;
+          margin-bottom: 10px;
+        }
+
+        > p {
+          font-size: 15px;
+          margin-bottom: 10px;
+        }
     }
 }
 

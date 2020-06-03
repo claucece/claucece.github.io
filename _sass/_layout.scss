@@ -36,6 +36,10 @@
     float: right;
     margin-top: -50px;
     font-size: 20px;
+
+    @include media-query($on-palm) {
+        margin-left: 90px;
+    }
 }
 
 .menu-link {
@@ -45,6 +49,14 @@
     &,
     &:visited {
         color: $black-color;
+    }
+
+    @include media-query($on-palm) {
+        border-top: 0px;
+        border-right: 5px solid $strong-orange-color;
+        font-size: 16px;
+        text-align: right;
+        padding: 3px;
     }
 }
 
@@ -171,6 +183,10 @@
 
 .centered-list {
       margin-left: 150px;
+
+      @include media-query($on-palm) {
+          margin-left: 50px;
+      }
 }
 
 .flex-item-3 {
@@ -213,6 +229,10 @@
 
     > p {
         margin-bottom: 50px;
+    }
+
+    @include media-query($on-palm) {
+      font-size: 25px;
     }
 }
 

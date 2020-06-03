@@ -348,4 +348,10 @@
     margin-left: 300px;
     width: 60%;
     border-left: 40px solid $strong-orange-color;
+
+    @include media-query($on-palm) {
+        margin-left: 10px;
+        border-left: 10px solid $strong-orange-color;
+        width: 100%;
+    }
 }

@@ -181,8 +181,26 @@
     margin-bottom: 10px;
 }
 
+.sub-subtitle {
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.excerpt {
+    font-size: 18px;
+}
+
 .centered-list {
       margin-left: 150px;
+
+      @include media-query($on-palm) {
+          margin-left: 50px;
+      }
+}
+
+.post-list {
+      margin-left: 150px;
+      list-style-type: upper-roman;
 
       @include media-query($on-palm) {
           margin-left: 50px;

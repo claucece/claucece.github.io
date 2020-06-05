@@ -10,6 +10,14 @@ tags: menu
   </div>
   <div class="contact-box">
     <h1 class="about-subtitle">Want to read me?</h1>
-    <p>I'll have eventually a blog here, so stay tuned!</p>
+    <h2 class="sub-subtitle">My stock of posts</h2>
+    <ul class="post-list">
+      {% for post in site.posts %}
+        <li>
+          <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+          <div class="excerpt">{{ post.excerpt }}</div>
+        </li>
+      {% endfor %}
+    </ul>
   </div>
 </div>

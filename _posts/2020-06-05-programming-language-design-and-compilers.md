@@ -153,26 +153,25 @@ everywhere mentioned on this blogpost). I hope it does for you, as well.
 <br />
 # References
 
-1. "Go" by Rob Pike, Mar 18, 2015. Available at:
-   https://inst.eecs.berkeley.edu/~cs294-101/sp15/slides/Go.pdf
+1. "Go" by Rob Pike, Mar 18, 2015. Available [here](https://inst.eecs.berkeley.edu/~cs294-101/sp15/slides/Go.pdf).
 2. "Hints on programming language design" by C. A. R. Hoare, Dec, 1973.
-   Available at: https://www.cs.yale.edu/flint/cs428/doc/HintsPL.pdf
+   Available [here](https://www.cs.yale.edu/flint/cs428/doc/HintsPL.pdf).
 3. "Everything You've Wanted to Know about Programming Languages but Have Been
    Afraid to Ask" by C. A. R. Hoare, Dec, 1973.
-   Available at: https://www.cs.ox.ac.uk/files/6156/H78%20-%20Everything.pdf
-4. Tweet sent by Sofía Celi:
-   https://twitter.com/claucece/status/1262586891775414272
-5. Available at: https://www.cs.cmu.edu/~rwh/pfpl/index.html
-6. The website is here: https://www.plai.org/
-7. Available at: https://craftinginterpreters.com/
-8. Available at: https://www.microsoft.com/en-us/research/publication/the-implementation-of-functional-programming-languages/
-9. Available at: https://gcc.gnu.org/wiki/ListOfCompilerBooks
-10. Read about it here: https://en.wikipedia.org/wiki/History_of_Programming_Languages
-11. Its 2021 website: https://popl21.sigplan.org/
-12. Its 2020 website: https://conf.researchr.org/home/pldi-2020
-13. Its 2020 website: https://icfp19.sigplan.org/home/icfp-2020
-14. Read about it here: https://en.wikipedia.org/wiki/OOPSLA
-15. Available at: https://existentialtype.wordpress.com/
-16. Available at: https://blog.regehr.org/
-17. Available at: https://patricia.no/
+   Available [here](https://www.cs.ox.ac.uk/files/6156/H78%20-%20Everything.pdf).
+4. Tweet sent by Sofía Celi.
+   Available [here](https://twitter.com/claucece/status/1262586891775414272).
+5. Available [here](https://www.cs.cmu.edu/~rwh/pfpl/index.html).
+6. The website is [here](https://www.plai.org/).
+7. Available [here](https://craftinginterpreters.com/).
+8. Available [here](https://www.microsoft.com/en-us/research/publication/the-implementation-of-functional-programming-languages/).
+9. Available [here](https://gcc.gnu.org/wiki/ListOfCompilerBooks).
+10. Read about it [here](https://en.wikipedia.org/wiki/History_of_Programming_Languages).
+11. Its 2021 website. Available [here](https://popl21.sigplan.org/).
+12. Its 2020 website. Available [here](https://conf.researchr.org/home/pldi-2020).
+13. Its 2020 website: Available [here](https://icfp19.sigplan.org/home/icfp-2020).
+14. Read about it [here](https://en.wikipedia.org/wiki/OOPSLA).
+15. Available [here](https://existentialtype.wordpress.com/).
+16. Available [here](https://blog.regehr.org/).
+17. Available [here](https://patricia.no/).
 

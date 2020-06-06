@@ -114,7 +114,7 @@ two suggested:
 <br />
 # Conferences to attend
 
-Something that always helped me on my cryptography journey was to attend
+Something that helped me on my cryptography journey was to attend
 conferences. I'll like to start to do that as well for PL, so these are
 the conferences that seem like a must to attend:
 
@@ -136,8 +136,8 @@ the conferences that seem like a must to attend:
 <br />
 # To follow
 
-I often find useful to follow people and read their blogpost. Note that, often
-times, these blogs are personal, so don't only expect 'computer science' stuff,
+I often find useful to follow people and read their thoughts. Note that, often
+times, these places are personal, so don't only expect 'computer science' stuff,
 and treat them nicely.
 
 * For computer science and amazing thoughts: the blog of Robert Harper [\[15\]](#references).
@@ -146,7 +146,7 @@ and treat them nicely.
 
 <br />
 
-Basically that is it. I'll like to thank to the amazing people that gave me
+Basically, that is it. I'll like to thank the amazing people that gave me
 recommendations and whose work inspire me to continue on the journey (they are
 everywhere mentioned on this blogpost). I hope it does for you, as well.
 

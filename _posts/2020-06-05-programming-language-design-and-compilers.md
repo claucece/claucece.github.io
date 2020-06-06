@@ -119,7 +119,7 @@ conferences. I'll like to start to do that as well for PL, so these are
 the conferences that seem like a must to attend:
 
 * **History of Programming Languages (HOPL)** [\[10\]](#references). It's
-  fourth edition is happening on 2021, and it is must to attend.
+  fourth edition is happening on 2021, and it is a MUST to attend.
   It is also very nice to check the papers presented over the past editions.
 * **ACM SIGPLAN Symposium on Principles of Programming Languages (POPL)** [\[11\]](#references).
   A conference to discuss aspects of programming languages.
@@ -142,7 +142,7 @@ and treat them nicely.
 
 * For computer science and amazing thoughts: the blog of Robert Harper [\[15\]](#references).
 * For LLVM and compilers: the blog of John Regehr [\[16\]](#references).
-* For C++, C#, Diversity and much more amazing content: the website of Patricia Aas.
+* For C++, C#, Diversity and much more amazing content: the website of Patricia Aas [\[17\]](#references).
 
 <br />
 

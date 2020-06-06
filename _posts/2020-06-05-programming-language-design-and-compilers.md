@@ -4,6 +4,8 @@ author: Sofía Celi
 title:  "Programming language design and compilers: where to start?"
 ---
 
+-- This is a draft--
+
 Over the past months, I have gotten more and more interested on how programming
 languages are designed, why such decisions are made, and the compiler role into
 this. I think that I started getting interested because of a current research

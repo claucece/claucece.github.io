@@ -102,7 +102,7 @@ two suggested:
 * **Engineering a Compiler** by Keith Cooper and Linda Torczon, as recommended by
   John Regehr (@johnregehr). It covers the important techniques for constructing
   a modern compiler.
-* **Building an Optimizing Compiler** by Bob Morga, as recommended by Eric
+* **Building an Optimizing Compiler** by Bob Morgan, as recommended by Eric
   Christopher (@echristo). It provides a high level design for a thorough
   optimizer, code generator, scheduler and register allocator for a generic
   modern RISC processor.

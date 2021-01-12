@@ -395,12 +395,14 @@
       margin-bottom: 25px;
     }
 
-    > img {
-      display: block;
-      margin-right: auto;
-      margin-left:auto;
-    }
+}
 
+.post-content img {
+    display: block;
+    margin-right: auto;
+    margin-left:auto;
+    margin-top: 70px;
+    margin-bottom: 50px;
 }
 
 .disclaimer {

@@ -15,7 +15,8 @@ Here, I'll like to share things that I've learned, books and advise that
 have helped me, and how to add diversity and inclusion into managing. What
 I will mostly like to focus on this blog post are 1:1s and why they are a
 central core to any team dynamic. I'll be talking of my experience over the
-years as a member of the software community.
+years as a member of the software community. Recently, I lead (in an small way)
+a team of people that I absolutely loved. So here some of my reflections.
 
 ## 1:1s
 
@@ -200,6 +201,23 @@ what the next steps will be. But it is not an easy job: "my definition of a
 great manager is someone with whom you can make a connection no matter where you
 sit in the organization chart" (Lopp).
 
+Things I personally value on managers (and that I try to do when mentoring
+or leading):
+
+* Someone that knows what I'm doing, trusts that I do it well and that helps
+  me if I get stuck.
+* Someone that does not hold my academic titles against me, and that knows
+  that I'm technically capable (because women are often regarded less technically capable
+  than men).
+* Someone that listens carefully, and specially listens on what I'm asking help
+  for. Many times, one asks help for one thing and it is assumed to be another.
+* Someone that values inclusion, mental-health help and diversity.
+* Someone that works on their inner biases and learns about systematic discrimination.
+* Someone that celebrates wins with me.
+* Someone that tries to understand team members beyond work.
+* Someone that finds the way to give feedback that I feel comfortable with.
+
+<br>
 Some resources that might help you:
 
 * [Interview Questions to ask as a candidate](https://docs.google.com/spreadsheets/d/11DoQ-Bhvs5mfRwB0Bz6OHwoChhFVK7u_KqlbFgR-ezY/edit#gid=0)

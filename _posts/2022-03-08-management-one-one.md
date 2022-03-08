@@ -5,45 +5,45 @@ title:  "1:1s and management"
 ---
 *Why I love good 1:1s*
 
-These days, I've been reflecting. Reflecting on the status of the world, research
+These days, I've been reflecting. Reflecting on the status of the world, research,
 and many other things. On the work side, I've been reflecting on how to
 properly run teams and how to make people be heard. I'm no expert on this and,
 while I do have some management and leadership experience, I have lots of things
 to learn. I have managed/lead 3 teams now of various sizes. My first experience
-with managing a team was a disaster: I failed in every way. But I've learned better.
-Here, I'll like to share things that I've learned, books and advise that
+with managing a team was a disaster: I failed in every way. But I've learned to do better.
+Here, I'll like to share things that I've learned, books and advice that
 have helped me, and how to add diversity and inclusion into managing. What
-I will mostly like to focus on this blog post are 1:1s and why they are a
-central core to any team dynamic. I'll be talking of my experience over the
-years as a member of the software community. Recently, I lead (in an small way)
+I will mostly like to focus in this blog post are 1:1s and why they are a
+central core to any team dynamic. I'll be talking about my experience over the
+years as a member of the software community. Recently, I led (in a small way)
 a team of people that I absolutely loved. So here some of my reflections.
 
 ## 1:1s
 
 <br>
 
-We all know that 1:1s are, we have all have had them. But sometimes we don't know
+We all know that 1:1s are, we all have had them. But sometimes we don't know
 what a *good* 1:1 is. For me, 1:1s are an opportunity to learn what are
-the success, challenges and needs of a person. It is not an status update or
+the successes, challenges and needs of a person. It is not a status update or
 reporting. It is the most vital process that a manager/lead must always held.
 
 I had once a manager/lead that wanted to cancel all their 1:1s in the team, or to
 reduce them to 15 minutes. They had too many other things to do and other
-important meetings to attend. I also had a leader that cancel all of our 1:1s. This
-leader first started by cancelling our 1:1 by sending a note over chat; then,
+important meetings to attend. I also had a leader that canceled all of our 1:1s. This
+leader first started by canceling our 1:1 by sending a note over chat; then,
 they cancel them by sending an email; then, they cancel by clicking 'no' to the
 video invitation; and, then, they just removed it with no notification from
 the calendar. These two examples, at least for me, are a big mistake. What
 these two examples said to me was: "I, as a manager/lead, do not value your
 work, and see no use in talking to you".
 
-1:1s are perhaps the more important meeting one can have in order to understand
+1:1s are perhaps the most important meeting one can have in order to understand
 the health and the needs of a team. You cannot understand what a person needs from
 second-hand telling, assumptions or gossip. You need to go to the source to
 understand any need. And, yet, 1:1s are the types of meetings that are more
-likely to be cancelled.
+likely to be canceled.
 
-Perhaps, the reason why they get cancelled is because there is a misunderstanding
+Perhaps, the reason why they get canceled is that there is a misunderstanding
 of what they are for. 1:1s are not status or report meetings. Status can be
 the introduction or the framing, but not the core of the meeting. A healthy
 1:1 is strategic: they must be valuable conversations.
@@ -97,24 +97,24 @@ they believe getting everyone to efficiently document their week is going to
 help. It doesn’t. E-mailed status reports say one thing to 90 percent of the
 people who write them: “You don’t value my time.”"
 
-I whole heartedly agree with the quoted text. When I go to 1:1s with people
+I whole-heartedly agree with the quoted text. When I go to 1:1s with people
 I mentor/lead/manage, I usually come prepared. I already know they have been
 working on `x` feature because I reviewed the PR or saw it. I already know they
-are interested on working on `x` because they said so in a team meeting or in a chat.
+are interested in working on `x` because they said so in a team meeting or in a chat.
 I have ways to find the information of what they have been doing by looking
 at jira tickets, attending project meetings, reading git commits, opening
 the slides of their presentations, and more. And, even if I don't have all the
 information, I trust my colleagues to do the right work. I don't need to micromanage
-anyone and I don't need them to repeat statuses for me. Those status found on jiras
+anyone and I don't need them to repeat statuses for me. Those statuses found on jiras
 or more, though, provide me with valuable information to discuss in our 1:1.
 
-I usually write the things I want to discuss in the 1:1s. They involve either
+I usually write down the things I want to discuss in the 1:1s. They involve either
 coding together a solution, discussing the comments on a PR, figuring our together
-how to run a meeting, finding the strategy to move some work forward and more.
+how to run a meeting, finding the strategy to move some work forward, and more.
 And, more importantly, they also involve finding opportunities. If a person
 casually says on chat or in a meeting that they are interested in `x` project,
 then, I usually try to dig more. How interested are they? Is there a paper
-around that project they will be interested that I can share? Is there a person
+around that project they would be interested in that I can share? Is there a person
 I can introduce them to? Is there a conference they can attend?
 
 A 1:1 is also the place for me to share information that they might not know. This
@@ -122,16 +122,16 @@ might include the strategy of a project or the overall goals of a new line
 of projects that are coming. This is very important because in the absence of
 information, people start making up this information. And, worse, if they feel
 threatened, they make up information that amplifies their worst fears. So, it is
-important to state information clearly, specially, strategic one.
+important to state information clearly, especially, strategic one.
 
 1:1 should be about creating meaningful conversations. And sometimes, it becomes
-a vent. Something went wrong and people need to vent. That is ok, the job here
+a vent. Something went wrong and people needed to vent. That is ok, the job here
 is to listen and not to advice (yet). Let the vent pass, and then you can
 start finding solutions. But, if you don't listen first, people will think
 you are not taking them seriously or that you are just there to shut them down.
 I have had these conversations and I have had to stay silent watching someone
-taking it all out of their chest. But only when the vent is finished, one can
-start talking because only then all is out. I have also vented in the past
+take it all out of their chest. But only when the vent is finished, one can
+start talking, because only then is all out. I have also vented in the past
 to managers and I think we all have had.
 
 The worst kind of 1:1 is, as Lopp says, the Disaster.
@@ -162,13 +162,13 @@ I have had two memorable disaster 1:1s. On the first, I failed to listen and
 I failed to see my mistake. The employee resigned and I felt terrible. I later
 apologized (not once, but at least five times on different occasions) and now
 we are good friends. On the second, I listened and provided support. I couldn't
-solve his problem: getting a much deserved raise, because it was out of my control.
+solve his problem: getting a much-deserved raise, because it was out of my control.
 But I tried, and showed him how much I tried. A disaster 1:1 can be recovered,
 but one needs to listen and provide actual support. A disaster is usually
 the result of miscommunication, so: "when communications are down, listen hard,
 repeat everything, and assume nothing" (Lopp).
 
-1:1s are also the time to understand what someone wants, what are their
+1:1s are also the time to understand what someone wants, what is their
 core motivation. Do they want to lead? Do they want to be a team player?
 Do they want to only do technical work? Not all people are you, and you will
 need to learn who they are. A good way I use for this is to understand
@@ -182,16 +182,16 @@ and provide no support, people will not trust you. And people need to trust you.
 
 It is also very important to believe whomever you are managing. This doesn't
 mean believing them blindly; but if they brought up a topic up in a 1:1 (a meeting
-that can be scary), then they actually feel like they need to say something.
-Don't treat it lightly and do believe them. This is specially important when
+that can be scary), then they actually felt like they needed to say something.
+Don't treat it lightly and do believe them. This is especially important when
 talking about diversity and inclusion.
 
 I remember once I had the experience of having an idea and that a male member took
-credit for it. This is specially important for me as a woman, as women are less
+credit for it. This is particularly important for me as a woman, as women are less
 recognized for the work they do and their contributions are usually
 diminished. I brought this to the attention of a manager who didn't believe me and
 provided no support. There was no response plan and no prevention of recurrence.
-I lost my trust on that manager. Listen on 1:1s, understand your inner biases,
+I lost my trust in that manager. Listen in 1:1s, understand your inner biases,
 seek to see other points of view, and take seriously instances where inclusion
 is being diminished.
 
@@ -201,21 +201,21 @@ what the next steps will be. But it is not an easy job: "my definition of a
 great manager is someone with whom you can make a connection no matter where you
 sit in the organization chart" (Lopp).
 
-Things I personally value on managers (and that I try to do when mentoring
+Things I personally value in managers (and that I try to do when mentoring
 or leading):
 
 * Someone that knows what I'm doing, trusts that I do it well and that helps
   me if I get stuck.
 * Someone that does not hold my academic titles against me, and that knows
-  that I'm technically capable (because women are often regarded less technically capable
+  that I'm technically capable (because women are often regarded as less technically capable
   than men).
-* Someone that listens carefully, and specially listens on what I'm asking help
-  for. Many times, one asks help for one thing and it is assumed to be another.
-* Someone that values inclusion, mental-health help and diversity.
+* Someone that listens carefully, and specially listens to what I'm asking help
+  for. Many times, one asks for help on one thing and it is assumed to be another.
+* Someone that values inclusion, mental-health help, and diversity.
 * Someone that works on their inner biases and learns about systematic discrimination.
 * Someone that celebrates wins with me.
 * Someone that tries to understand team members beyond work.
-* Someone that finds the way to give feedback that I feel comfortable with.
+* Someone that finds a way to give feedback that I feel comfortable with.
 
 <br>
 Some resources that might help you:

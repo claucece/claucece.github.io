@@ -154,7 +154,7 @@ The worst kind of 1:1 is, as Lopp says, the Disaster.
 <br>
 A disaster, though, is the result of poor management. "When your employee
 believes totally losing their shit is a productive strategy, it’s because they
-believe it’s the only option left for making anything change". And, most of
+believe it’s the only option left for making anything change" (Lopp). And, most of
 the times, they believe is the last option they have.
 
 I have had two memorable disaster 1:1s. On the first, I failed to listen and
@@ -165,7 +165,7 @@ solve his problem: getting a much deserved raise, because it was out of my contr
 But I tried, and showed him how much I tried. A disaster 1:1 can be recovered,
 but one needs to listen and provide actual support. A disaster is usually
 the result of miscommunication, so: "when communications are down, listen hard,
-repeat everything, and assume nothing".
+repeat everything, and assume nothing" (Lopp).
 
 1:1s are also the time to understand what someone wants, what are their
 core motivation. Do they want to lead? Do they want to be a team player?

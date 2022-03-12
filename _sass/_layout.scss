@@ -386,8 +386,8 @@
 
 .post-content {
     margin-top: 4%;
-    margin-left: 100px;
-    margin-right: 50px;
+    margin-left: 150px;
+    margin-right: 150px;
     margin-bottom: 60px;
     font-family: $page-font-family;
     font-size: 22px;
@@ -395,6 +395,10 @@
       margin-bottom: 25px;
     }
 
+    @include media-query($on-palm) {
+    margin-left: 30px;
+    margin-right: 30px;
+    }
 }
 
 .post-content img {

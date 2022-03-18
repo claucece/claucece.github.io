@@ -44,4 +44,11 @@ tags:
        <li>"Post-Quantum Internships at Cloudflare" with Bas Westerbaan, Jonathan Hoyland, Thom Wiggers, Goutam Tamvada and Sofía Celi. Find it <a href="https://cloudflare.tv/event/35qmxTPnKjpYirSjWv7Ln8" target="_blank">here</a>.</li>
      </ul>
 
+    <h2>Some extras from the PQNet event at the Isogeny-based school</h2>
+     <ul>
+       <li>"Integrating post-quantum cryptography into protocols: the case of DNSSEC" with Roland van Rijswijk-Deij". Find it <a href="https://youtu.be/1XPlp_ONbFY" target="_blank">here</a>.</li>
+       <li>"Integrating post-quantum cryptography into protocols: the case of TLS" with Douglas Stebila. Find it <a href="https://youtu.be/sBK5hmYajb8" target="_blank">here</a>.</li>
+       <li>"Integrating post-quantum cryptography into protocols: the case of Signal" with Thomas Prest. Find it <a href="https://youtu.be/Jp6N1UHz_FE" target="_blank">here</a>.</li>
+       <li>"Integrating post-quantum cryptography into protocols: the case of Wireguard" with Kai-Chun Ning. Find it <a href="https://youtu.be/Q7Bv2K3trg8" target="_blank">here</a>.</li>
+     </ul>
 </div>

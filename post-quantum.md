@@ -9,7 +9,7 @@ tags:
   <div class="contact-container">
   </div>
   <div class="contact-box">
-    <h1 class="about-subtitle">Some post-quantum work</h1>
+    <h1 class="about-subtitle">Some Post-Quantum work</h1>
   </div>
   <div>
     <br>
@@ -44,7 +44,9 @@ tags:
        <li>"Post-Quantum Internships at Cloudflare" with Bas Westerbaan, Jonathan Hoyland, Thom Wiggers, Goutam Tamvada and Sofía Celi. Find it <a href="https://cloudflare.tv/event/35qmxTPnKjpYirSjWv7Ln8" target="_blank">here</a>.</li>
      </ul>
 
+    <br>
     <h2>Some extras from the PQNet event at the Isogeny-based school</h2>
+    <br>
      <ul>
        <li>"Integrating post-quantum cryptography into protocols: the case of DNSSEC" with Roland van Rijswijk-Deij". Find it <a href="https://youtu.be/1XPlp_ONbFY" target="_blank">here</a>.</li>
        <li>"Integrating post-quantum cryptography into protocols: the case of TLS" with Douglas Stebila. Find it <a href="https://youtu.be/sBK5hmYajb8" target="_blank">here</a>.</li>

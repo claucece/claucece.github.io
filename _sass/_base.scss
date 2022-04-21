@@ -88,7 +88,6 @@ a {
     margin-left: auto;
     padding-right: $spacing-unit;
     padding-left: $spacing-unit;
-    border-bottom: solid 5px $strong-orange-color;
 
     @extend %clearfix;
 
@@ -104,6 +103,15 @@ a {
     }
 }
 
+.division {
+    border-bottom: solid 5px $strong-orange-color;
+    transform: skewY(-7deg);
+    transform-origin: right;
+
+    @include media-query($on-palm) {
+    transform: skewY(-15deg);
+    }
+}
 
 
 /**

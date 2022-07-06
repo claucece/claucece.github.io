@@ -20,29 +20,17 @@ For Digital Signatures:
 <br>
 With a note:
 
-```
-CRYSTALS-KYBER (key-establishment) and CRYSTALS-Dilithium
-(digital signatures) were both selected for their strong
-security and excellent performance, and NIST expects them to
-work well in most applications. Falcon will also be standardized
-by NIST since there may be use cases for which
-CRYSTALS-Dilithium signatures are too large. Additionally,
-SPHINCS+ will be standardized to avoid only relying on
-the security of lattices for signatures. NIST asks for public feedback
-on a version of SPHINCS+ with a lower number of maximum signatures.
-```
+"CRYSTALS-KYBER (key-establishment) and CRYSTALS-Dilithium (digital signatures) were both selected for their strong security and excellent performance, and NIST expects them to work well in most applications.
+Falcon will also be standardized by NIST since there may be use cases for which CRYSTALS-Dilithium signatures are too large.
+Additionally, SPHINCS+ will be standardized to avoid only relying on the security of lattices for signatures. NIST asks for public feedback on a version of SPHINCS+ with a lower number of maximum signatures."
 
 <br>
 NIST will also hold a new call for proposals for public key signatures:
 
-```
-NIST also plans to issue a new Call for Proposals for public-key
-(quantum-resistant) digital signature algorithms by the end of summer
-2022. NIST is primarily looking to diversify its signature portfolio,
-so signature schemes that are not based on structured lattices are of
-greatest interest. NIST would like submissions for signature schemes
-that have short signatures and fast verification (e.g., UOV).
-```
+"NIST also plans to issue a new Call for Proposals for public-key (quantum-resistant) digital signature algorithms by the end of summer
+2022.
+NIST is primarily looking to diversify its signature portfolio, so signature schemes that are not based on structured lattices are of greatest interest.
+NIST would like submissions for signature schemes that have short signatures and fast verification (e.g., UOV)."
 
 In this blog post, I'll be not focusing on the post-quantum KEM, but rather on
 post-quantum signatures as this seems to be 'long-road-ahead' from both
@@ -136,3 +124,5 @@ A table of comparison of sizes:
 
 So, lots of avenues of research are still open for a post-quantum signature scheme that work on the protocols we use nowadays.
 Let the science begin!
+
+<strong>EDIT</strong>: Thank you Peter Schwabe, Andreas Hülsing, Gustavo Banegas and Carsten Baum for pointing out additions needed and fixes to be made.

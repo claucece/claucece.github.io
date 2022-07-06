@@ -120,7 +120,7 @@ Nevertheless, SPHINCS+ has larger signature sizes.
 Great documentation of hash-based schemes can be found [here](https://huelsing.net/wordpress/?page_id=165).
 
 A table of comparison of sizes:
-![Comparison](/assets/comparison-pq.png)
+![Comparison](/assets/comparison-pq-2.png)
 
 So, lots of avenues of research are still open for a post-quantum signature scheme that work on the protocols we use nowadays.
 Let the science begin!

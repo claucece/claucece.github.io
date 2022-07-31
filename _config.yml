@@ -7,6 +7,8 @@ url: "http://claucece.github.io/" # the base hostname & protocol for your site, 
 twitter_username: claucece
 github_username:  claucece
 
+markdown: kramdown
+
 plugins:
   - jekyll-feed
 

@@ -197,10 +197,10 @@
 }
 
 .centered-list {
-      margin-left: 150px;
+      margin-left: 5rem;
 
       @include media-query($on-palm) {
-          margin-left: 50px;
+          margin-left: 1.5rem;
       }
 }
 

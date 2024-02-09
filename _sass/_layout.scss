@@ -155,7 +155,7 @@
     margin-right: 30px;
     padding-top: 5px;
     font-family: $page-font-family;
-    font-size: 22px;
+    font-size: 19px;
 }
 
 .container {
@@ -197,7 +197,7 @@
 }
 
 .centered-list {
-      margin-left: 5rem;
+      margin-left: 3rem;
 
       @include media-query($on-palm) {
           margin-left: 1.5rem;
@@ -446,4 +446,19 @@
 
 .post-box {
     display: flex;
+}
+
+.divider {
+  overflow: hidden;
+}
+
+.divider:after {
+  content: "";
+  display: inline-block;
+  height: 0.5em;
+  vertical-align: bottom;
+  width: 100%;
+  margin-right: -100%;
+  margin-left: 10px;
+  border-top: 5px solid #f980108f;
 }

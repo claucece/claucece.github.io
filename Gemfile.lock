@@ -113,7 +113,6 @@ PLATFORMS
   x86_64-darwin
 
 DEPENDENCIES
-  jekyll (~> 4.4.1)
   jekyll-feed (~> 0.13)
   minima (~> 2.5)
   tzinfo (~> 1.2)

@@ -1,11 +1,15 @@
 /**
  * Site header
  */
+
+@use "variables";
+@use "sass:math";
+
 .site-header {
 
     //fix the header in the top
     position: fixed;
-    width: $full-width;
+    width: variables.$full-width;
     background-color: white;
 
     z-index: 1;
@@ -21,18 +25,18 @@
 
     &,
     &:visited {
-        color: $black-color;
+        color: variables.$black-color;
     }
 
     .mobile-header {
         display: none;
-        @include media-query($on-palm) {
+        @include variables.media-query(variables.$on-palm) {
             display: inline;
             width: 50%;
         }
     }
 
-    @include media-query($on-palm) {
+    @include variables.media-query(variables.$on-palm) {
             width: 50%;
     }
 }
@@ -43,23 +47,23 @@
     margin-top: -50px;
     font-size: 20px;
 
-    @include media-query($on-palm) {
+    @include variables.media-query(variables.$on-palm) {
         margin-left: 90px;
     }
 }
 
 .menu-link {
     background-color: white;
-    border-top: 55px solid $strong-orange-color;
+    border-top: 55px solid variables.$strong-orange-color;
 
     &,
     &:hover {
-        color: $black-color;
+        color: variables.$black-color;
     }
 
-    @include media-query($on-palm) {
+    @include variables.media-query(variables.$on-palm) {
         border-top: 0px;
-        border-right: 5px solid $strong-orange-color;
+        border-right: 5px solid variables.$strong-orange-color;
         font-size: 16px;
         text-align: right;
         padding: 3px;
@@ -70,8 +74,8 @@
  * Site footer
  */
 .site-footer {
-    padding: $spacing-unit;
-    background-color: $strong-orange-color;
+    padding: variables.$spacing-unit;
+    background-color: variables.$strong-orange-color;
 }
 
 .contact-list,
@@ -83,50 +87,50 @@
 
 .footer-link {
     text-decoration: none;
-    background-color: $strong-orange-color;
+    background-color: variables.$strong-orange-color;
     padding: 0px;
 
 }
 
 .footer-col-wrapper {
-    margin-left: -$spacing-unit / 3;
+    margin-left: calc((#{-(variables.$spacing-unit)}) / 3);
 }
 
 .footer-col {
     float: left;
-    padding-left: $spacing-unit / 3;
+    padding-left: calc((#{variables.$spacing-unit}) / 3);
 
 }
+
 
 .footer-col-1 {
-    width: -webkit-calc(60% - (#{$spacing-unit} / 2));
-    width:         calc(60% - (#{$spacing-unit} / 2));
+  width: -webkit-calc(60% - #{math.div(variables.$spacing-unit, 2)});
+  width:         calc(60% - #{math.div(variables.$spacing-unit, 2)});
 }
 
-
-@include media-query($on-laptop) {
-    .footer-col-1 {
-        width: -webkit-calc(50% - (#{$spacing-unit} / 2));
-        width:         calc(50% - (#{$spacing-unit} / 2));
-    }
+@include variables.media-query(variables.$on-laptop) {
+  .footer-col-1 {
+    width: -webkit-calc(50% - #{math.div(variables.$spacing-unit, 2)});
+    width:         calc(50% - #{math.div(variables.$spacing-unit, 2)});
+  }
 }
 
-@include media-query($on-palm) {
-    .footer-col {
-        float: none;
-        width: -webkit-calc($full-width - (#{$spacing-unit} / 2));
-        width:         calc($full-width - (#{$spacing-unit} / 2));
+@include variables.media-query(variables.$on-palm) {
+  .footer-col {
+    float: none;
+    width: -webkit-calc(#{variables.$full-width} - #{math.div(variables.$spacing-unit, 2)});
+    width:         calc(#{variables.$full-width} - #{math.div(variables.$spacing-unit, 2)});
 
-        > h1 {
-          font-size: 20px;
-          margin-bottom: 10px;
-        }
-
-        > p {
-          font-size: 15px;
-          margin-bottom: 10px;
-        }
+    > h1 {
+      font-size: 20px;
+      margin-bottom: 10px;
     }
+
+    > p {
+      font-size: 15px;
+      margin-bottom: 10px;
+    }
+  }
 }
 
 /**
@@ -134,7 +138,7 @@
  */
 
 .page-header {
-    font-family: $base-font-family;
+    font-family: variables.$base-font-family;
     margin-left: 30px;
     margin-right: 30px;
     margin-top: 170px;
@@ -145,7 +149,7 @@
     font-weight: bold;
     line-height: 1;
 
-    @include media-query($on-laptop) {
+    @include variables.media-query(variables.$on-laptop) {
         font-size: 30px;
     }
 }
@@ -154,10 +158,10 @@
     margin-left: 30px;
     margin-right: 30px;
     padding-top: 5px;
-    font-family: $page-font-family;
+    font-family: variables.$page-font-family;
     font-size: 19px;
 
-    @include media-query($on-laptop) {
+    @include variables.media-query(variables.$on-laptop) {
         font-size: 16px;
     }
 }
@@ -182,7 +186,7 @@
       }
   }
 
-  @include media-query($on-palm) {
+  @include variables.media-query(variables.$on-palm) {
     margin-bottom: 0px;
   }
 }
@@ -203,7 +207,7 @@
 .centered-list {
       margin-left: 3rem;
 
-      @include media-query($on-palm) {
+      @include variables.media-query(variables.$on-palm) {
           margin-left: 1.5rem;
       }
 }
@@ -212,40 +216,40 @@
       margin-left: 150px;
       list-style-type: upper-roman;
 
-      @include media-query($on-palm) {
+      @include variables.media-query(variables.$on-palm) {
           margin-left: 50px;
       }
 }
 
 .flex-item-3 {
-    width: $full-width / 2;
+    width: calc(variables.$full-width / 2);
 
     > .inside-image {
-      width: $full-width;
+      width: variables.$full-width;
     }
 
     a {
-      color: $red-hover-color;
+      color: variables.$red-hover-color;
     }
 
 }
 
 .flex-item-4 {
     //margin-top: $spacing-unit;
-    width: $full-width / 2;
+    width: calc(variables.$full-width / 2);
     padding: 15px;
 
     > .inside-image {
-      width: $full-width;
+      width: variables.$full-width;
     }
 
     > .inside-png-image {
       margin-top: 7px;
-      width: $full-width;
+      width: variables.$full-width;
     }
 
     a {
-      color: $red-hover-color;
+      color: variables.$red-hover-color;
     }
 
 }
@@ -259,22 +263,22 @@
         margin-bottom: 50px;
     }
 
-    @include media-query($on-palm) {
+    @include variables.media-query(variables.$on-palm) {
       font-size: 25px;
     }
 }
 
 .index-link {
-    color: $black-color;
+    color: variables.$black-color;
     text-decoration: none;
-    background-color: $orange-hover-color;
+    background-color: variables.$orange-hover-color;
     padding: 0px;
 
     &:hover {
-       color: $black-color;
+       color: variables.$black-color;
     }
 
-    @include media-query($on-palm) {
+    @include variables.media-query(variables.$on-palm) {
       > .media-text {
          margin: -30px;
       }
@@ -286,18 +290,18 @@
  */
 
 .photo-container {
-      border-top: 55px solid $strong-orange-color;
+      border-top: 55px solid variables.$strong-orange-color;
       transform: skew(0, -6deg);
 }
 
 .photo {
       margin-top: -50px;
-      width: $full-width / 1.5;
+      width: calc(variables.$full-width / 1.5);
       margin-left: 25%;
 }
 
 .important {
-      background-color: $orange-hover-color;
+      background-color: variables.$orange-hover-color;
       padding: 5px;
 }
 
@@ -307,7 +311,7 @@
 
 .contact-container {
       margin-top: 70px;
-      border-top: 55px solid $strong-orange-color;
+      border-top: 55px solid variables.$strong-orange-color;
       transform: skew(0, 3deg);
 }
 
@@ -335,7 +339,7 @@
     height: auto;
     line-height:30px;
 
-    @include media-query($on-palm) {
+    @include variables.media-query(variables.$on-palm) {
       padding: 20px;
       padding-bottom: 5px;
       display: inline-block;
@@ -349,7 +353,7 @@
     padding-top: 0px;
     margin: 10px;
     margin-top: 0px;
-    border: 5px solid $strong-orange-color;
+    border: 5px solid variables.$strong-orange-color;
     color: black;
     font-weight: bold;
     font-size: 1.5em;
@@ -357,7 +361,7 @@
     flex: 1 0 0px;
     height: 70px;
     width: 120px;
-    @include media-query($on-palm) {
+    @include variables.media-query(variables.$on-palm) {
         padding: 0px;
         margin: 10px;
         margin-top: 0px;
@@ -384,7 +388,7 @@
     height: auto;
     line-height:30px;
 
-    @include media-query($on-palm) {
+    @include variables.media-query(variables.$on-palm) {
       display: none;
     }
 }
@@ -402,7 +406,7 @@
     height: 70px;
     width: 100px;
     border: 2px solid #FBA671AF;
-    @include media-query($on-palm) {
+    @include variables.media-query(variables.$on-palm) {
         padding: 0px;
         margin: 10px;
         margin-top: 0px;
@@ -451,11 +455,11 @@
     margin-top: -20px;
     margin-left: 300px;
     width: 60%;
-    border-left: 40px solid $strong-orange-color;
+    border-left: 40px solid variables.$strong-orange-color;
 
-    @include media-query($on-palm) {
+    @include variables.media-query(variables.$on-palm) {
         margin-left: 10px;
-        border-left: 10px solid $strong-orange-color;
+        border-left: 10px solid variables.$strong-orange-color;
         width: 100%;
     }
 }
@@ -469,13 +473,13 @@
     margin-left: 150px;
     margin-right: 150px;
     margin-bottom: 60px;
-    font-family: $page-font-family;
+    font-family: variables.$page-font-family;
     font-size: 22px;
     > p {
       margin-bottom: 25px;
     }
 
-    @include media-query($on-palm) {
+    @include variables.media-query(variables.$on-palm) {
     margin-left: 30px;
     margin-right: 30px;
     }

@@ -1,3 +1,7 @@
+@use "variables";
+@use "sass:list";
+@use "sass:string";
+@use "sass:math";
 /**
  * Reset some basic elements
  */
@@ -13,13 +17,13 @@ dl, dd, ol, ul, figure {
  * Basic styling
  */
 body {
-    font-family: $base-font-family;
-    font-size: $base-font-size;
-    line-height: $base-line-height;
+    font-family: variables.$base-font-family;
+    font-size: variables.$base-font-size;
+    line-height: variables.$base-line-height;
     font-weight: 300;
-    color: $text-color;
-    background-color: $background-color;
-    -webkit-text-size-adjust: $full-width;
+    color: variables.$text-color;
+    background-color: variables.$background-color;
+    -webkit-text-size-adjust: variables.$full-width;
 }
 
 
@@ -28,7 +32,7 @@ body {
  */
 img {
     margin-top: -48px;
-    max-width: $full-width;
+    max-width: variables.$full-width;
     vertical-align: middle;
 }
 
@@ -38,7 +42,7 @@ img {
  * Lists
  */
 ul, ol {
-    margin-left: $spacing-unit;
+    margin-left: variables.$spacing-unit;
 }
 
 li {
@@ -49,7 +53,7 @@ li {
 }
 
 .download {
-    margin-right: $spacing-unit;
+    margin-right: variables.$spacing-unit;
     font-size: 0.8em;
 }
 
@@ -66,13 +70,13 @@ h1, h2, h3, h4, h5, h6 {
  * Links
  */
 a {
-    color: $black-color;
+    color: variables.$black-color;
     text-decoration: none;
-    background-color: $orange-hover-color;
+    background-color: variables.$orange-hover-color;
     padding: 5px;
 
     &:hover {
-      color: $white-color;
+      color: variables.$white-color;
     }
 }
 
@@ -82,20 +86,20 @@ a {
  * Wrapper
  */
 .wrapper {
-    max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit} * 2));
-    max-width:         calc(#{$content-width} - (#{$spacing-unit} * 2));
+    max-width: -webkit-calc(#{variables.$content-width} - (#{variables.$spacing-unit} * 2));
+    max-width:         calc(#{variables.$content-width} - (#{variables.$spacing-unit} * 2));
     margin-right: auto;
     margin-left: auto;
-    padding-right: $spacing-unit;
-    padding-left: $spacing-unit;
+    padding-right: variables.$spacing-unit;
+    padding-left: variables.$spacing-unit;
 
     @extend %clearfix;
 
-    @include media-query($on-laptop) {
-        max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit}));
-        max-width:         calc(#{$content-width} - (#{$spacing-unit}));
-        padding-right: $spacing-unit / 2;
-        padding-left: $spacing-unit / 2;
+    @include variables.media-query(variables.$on-laptop) {
+        max-width: -webkit-calc(#{variables.$content-width} - (#{variables.$spacing-unit}));
+        max-width:         calc(#{variables.$content-width} - (#{variables.$spacing-unit}));
+        padding-right: calc(variables.$spacing-unit / 2);
+        padding-left: calc(variables.$spacing-unit / 2);
     }
 
     > a {
@@ -104,11 +108,11 @@ a {
 }
 
 .division {
-    border-bottom: solid 5px $strong-orange-color;
+    border-bottom: solid 5px variables.$strong-orange-color;
     transform: skewY(-7deg);
     transform-origin: right;
 
-    @include media-query($on-palm) {
+    @include variables.media-query(variables.$on-palm) {
     transform: skewY(-15deg);
     }
 }
@@ -137,7 +141,7 @@ a {
     width: 80%;
     height: auto;
 
-    @include media-query($on-palm) {
+    @include variables.media-query(variables.$on-palm) {
         width: 40%;
     }
 }
@@ -162,27 +166,27 @@ a {
 .icon-inside-big {
   > svg {
     path, rect {
-      fill: $black-color;
+      fill: variables.$black-color;
       webkit-transition: fill 1s ease-out; /* For Safari 3.1 to 6.0 */
       transition: fill 1s ease-out;
     }
 
     .st0 {
-      fill: $black-color;
+      fill: variables.$black-color;
       webkit-transition: fill 1s ease-out; /* For Safari 3.1 to 6.0 */
       transition: fill 1s ease-out;
     }
 
     &:hover path {
-      fill: $white-color;
+      fill: variables.$white-color;
     }
 
     &:hover .st0 {
-      fill: $white-color;
+      fill: variables.$white-color;
     }
 
     &:hover rect {
-      fill: $white-color;
+      fill: variables.$white-color;
     }
   }
 }
@@ -197,26 +201,26 @@ a {
     @each $row in $matrix {
       @each $item in $row {
         @if $item != 0 {
-          $index: index($matrix-colors, $item);
+          $index: list.index($matrix-colors, $item);
           @if not $index {
-            $matrix-colors: append($matrix-colors, $item);
-            $counts: append($counts, 1);
+            $matrix-colors: list.append($matrix-colors, $item);
+            $counts: list.append($counts, 1);
           } @else {
-            $count: nth($counts, $index) + 1;
-            $counts: set-nth($counts, $index, $count);
+            $count: list.nth($counts, $index) + 1;
+            $counts: list.set-nth($counts, $index, $count);
           }
         }
       }
     }
     // use index of the highest count to get the corresponding matrix color
-    $default-color: nth($colors, nth($matrix-colors, index($counts, max($counts...))));
+    $default-color: list.nth($colors, list.nth($matrix-colors, list.index($counts, math.max($counts...))));
   }
 
-  @for $i from 1 through length($matrix) {
-    $row: nth($matrix, $i);
+  @for $i from 1 through list.length($matrix) {
+    $row: list.nth($matrix, $i);
 
-    @for $j from 1 through length($row) {
-      $dot: nth($row, $j);
+    @for $j from 1 through list.length($row) {
+      $dot: list.nth($row, $j);
 
       @if $dot != 0 {
         @if $ret != "" {
@@ -224,7 +228,7 @@ a {
           $moz: $moz + ",";
         }
 
-        $color: nth($colors, $dot);
+        $color: list.nth($colors, $dot);
         @if $color == $default-color {
           $ret: $ret + ($j * $size) + " " + ($i * $size);
           $moz: $moz + ($j * $size) + " " + ($i * $size) + " 0 0.020em";
@@ -239,11 +243,11 @@ a {
   width: $size;
   height: $size;
   color: $default-color;
-  box-shadow: unquote($ret);
+  box-shadow: string.unquote($ret);
 
   // firefox only style
   @supports (-moz-appearance: meterbar) {
-    box-shadow: unquote($moz);
+    box-shadow: string.unquote($moz);
   }
 }
 
@@ -308,7 +312,7 @@ $icon-github: (
        padding-top: 80px;
    }
 
-   @include media-query($on-palm) {
+   @include variables.media-query(variables.$on-palm) {
      font-size: 8px;
      > .top-copyright {
        padding-top: 10px;
@@ -320,6 +324,6 @@ $icon-github: (
   padding: 0;
 
   &:hover {
-    color: $strong-orange-color;
+    color: variables.$strong-orange-color;
   }
 }

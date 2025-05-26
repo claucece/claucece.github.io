@@ -9,6 +9,9 @@ github_username:  claucece
 
 markdown: kramdown
 
+sass:
+  sass_dir: _sass
+
 plugins:
   - jekyll-feed
 

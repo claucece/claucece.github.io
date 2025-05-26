@@ -1,0 +1,38 @@
+// _variables.scss
+
+$base-font-family: 'Space Mono', monospace !default;
+$alternative-font-family: 'Space Mono', monospace !default;
+$page-font-family: 'Work Sans', sans-serif !default;
+
+$base-font-size: 16px !default;
+$small-font-size: $base-font-size * 0.8 !default;
+$base-line-height: 1.5 !default;
+
+$spacing-unit: 30px !default;
+
+$text-color: black !default;
+$header-text-color: #111 !default;
+$background-color: #ffffff !default;
+
+$white-color: #fafafa !default;
+$strong-orange-color: #ff6700 !default;
+$orange-hover-color: #FBA671 !default;
+$red-hover-color: #fafafa !default;
+$black-color: black !default;
+
+$content-width: 1400px !default;
+
+$on-palm: 600px;
+$on-laptop: 800px;
+$on-small: 1000px;
+
+$box-width: 100px !default;
+$box-indent: 30px !default;
+
+$full-width: 100% !default;
+
+@mixin media-query($device) {
+  @media screen and (max-width: $device) {
+    @content;
+  }
+}

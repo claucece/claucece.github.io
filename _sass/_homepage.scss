@@ -2,9 +2,11 @@
  * Homepage
  */
 
+@use "variables";
+
 #main {
   margin-bottom: 150px;
-  @include media-query($on-palm) {
+  @include variables.media-query(variables.$on-palm) {
     margin-bottom: 0px;
   }
 }
@@ -19,33 +21,35 @@
 }
 
 .intro {
-    width: $full-width;
+    width: variables.$full-width;
     padding-bottom: 25px;
     margin-top: 170px;
 
     > .inside-image {
-      width: $full-width;
+      width: variables.$full-width;
     }
 
-  @include media-query($on-palm) {
+  @include variables.media-query(variables.$on-palm) {
     padding-bottom: 0px;
     margin-top: 140px;
 
     > .inside-image {
-      width: $full-width;
+      width: variables.$full-width;
     }
   }
 }
 
 .full-display {
-  @include media-query($on-palm) {
+  display: block;
+
+  @include variables.media-query(variables.$on-palm) {
     display: none;
   }
 }
 
 .mobile-display {
   display: none;
-  @include media-query($on-palm) {
+  @include variables.media-query(variables.$on-palm) {
     display: block;
   }
 }
@@ -57,7 +61,7 @@
     margin-right: 80px;
     margin-bottom: 50px;
 
-  @include media-query($on-palm) {
+  @include variables.media-query(variables.$on-palm) {
     font-size: 8px;
     margin-bottom: 10px;
     margin-left: 20px;

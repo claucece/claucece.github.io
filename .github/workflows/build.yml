@@ -1,0 +1,41 @@
+name: Build and Deploy Jekyll with SCSS
+
+on:
+  push:
+    branches:
+      - main  
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout source
+      uses: actions/checkout@v3
+
+    - name: Set up Ruby
+      uses: ruby/setup-ruby@v1
+      with:
+        ruby-version: '3.2'
+
+    - name: Install Jekyll and Bundler
+      run: |
+        gem install bundler
+        bundle install || bundle init && echo 'gem "jekyll"' >> Gemfile && bundle install
+
+    - name: Install Dart Sass
+      run: |
+        curl -L https://github.com/sass/dart-sass/releases/download/1.69.5/dart-sass-1.69.5-linux-x64.tar.gz | tar -xz
+        sudo mv dart-sass/sass /usr/local/bin/sass
+
+    - name: Compile SCSS to CSS
+      run: sass css/main.scss css/main.css
+
+    - name: Build site with Jekyll
+      run: bundle exec jekyll build
+
+    - name: Deploy to GitHub Pages
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./_site

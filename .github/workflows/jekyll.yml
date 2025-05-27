@@ -44,9 +44,7 @@ jobs:
         id: pages
         uses: actions/configure-pages@v5
       - name: Install Dart Sass
-        run: |
-          curl -L https://github.com/sass/dart-sass/releases/download/1.69.5/dart-sass-1.69.5-linux-x64.tar.gz | tar -xz
-          sudo mv dart-sass/sass /usr/local/bin/sass
+        uses: dw-labs-org/dart-sass-gha@v1
       - name: Compile SCSS to CSS
         run: sass css/main.scss css/main.css
       - name: Build with Jekyll

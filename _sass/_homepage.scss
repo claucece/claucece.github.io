@@ -41,6 +41,16 @@
 
 .full-display {
   display: block;
+  background-color: #ff6700;
+  color: black;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  line-height: 1;
+  font-size: 90px;
+  margin-top: 6rem;
+  padding: 3rem;
+  padding-left: 6rem;
 
   @include variables.media-query(variables.$on-palm) {
     display: none;
@@ -50,7 +60,18 @@
 .mobile-display {
   display: none;
   @include variables.media-query(variables.$on-palm) {
-    display: block;
+  display: block;
+  background-color: #ff6700;
+  color: black;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  line-height: 1;
+  font-size: 48px;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  padding: 3rem;
+  padding-left: 1rem;
   }
 }
 
